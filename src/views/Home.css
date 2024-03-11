@@ -32,3 +32,21 @@
   body{
     background-color: aqua;
   }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hover-text {
+    margin: 0;
+    color: black;
+  }
+  
