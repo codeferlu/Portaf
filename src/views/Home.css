@@ -1,0 +1,34 @@
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 3s ease; /* Transición suave para la propiedad de opacidad */
+  }
+  
+  .video-container:hover .video {
+    opacity: 0.1; /* Cambiar la opacidad cuando se hace hover */
+  }
+  
+
+  .content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  
+  .ache1-container {
+    position: relative;
+    padding: 10px;
+    font-family: 'Rouge Script';
+    
+  }
+  
+  .ache2 {
+    font-size: 13px;
+  }
+  body{
+    background-color: aqua;
+  }
