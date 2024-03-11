@@ -38,8 +38,8 @@ const Home = (props) => {
           setShowText(false);
           timerRef.current = setTimeout(() => {
             setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-          }, 350); // Cambiado a 150ms
-        }, 400); // Cambiado a 150ms
+          }, 350); 
+        }, 400); 
       }, 1200);
     }
     return () => clearTimeout(timerRef.current);

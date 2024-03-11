@@ -4,8 +4,8 @@
     
 }
 .navbar a {
-    text-decoration: none; /* Para quitar la subrayado predeterminado */
-    padding: 10px 20px; /* Espaciado entre los enlaces */
-    margin-right: 10px; /* Espacio entre los enlaces */
-    color: rgb(36, 209, 166); /* Color del texto */
+    text-decoration: none; 
+    padding: 10px 20px; 
+    margin-right: 10px; 
+    color: rgb(36, 209, 166); 
   }
