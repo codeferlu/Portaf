@@ -37,9 +37,9 @@ const Home = (props) => {
           setShowText(false);
           timerRef.current = setTimeout(() => {
             setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-          }, 100);
-        }, 2000);
-      }, 3000);
+          }, 150); // Cambiado a 1000ms (1 segundo)
+        }, 150); // Cambiado a 1000ms (1 segundo)
+      }, 300);
     }
     return () => clearTimeout(timerRef.current);
   }, [hovered, textIndex]);
@@ -59,8 +59,6 @@ const Home = (props) => {
       <div className='content'>
         <div className='ache1-container'>
           <h1 className='ache2'>I am Fernando Olivares, a Chilean Junior Fullstack JavaScript developer, exploring new technologies and honing my skills. I am proactive, resourceful, and work well in a team.</h1>
-          
-         
         </div>
       </div>
     </>
