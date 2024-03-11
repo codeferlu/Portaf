@@ -22,20 +22,16 @@
   .ache1-container {
     position: relative;
     padding: 10px;
-    font-family: 'Rouge Script';
+    font-family:'Times New Roman', Times, serif;
     
   }
-  
-  .ache2 {
-    font-size: 13px;
-  }
-  body{
-    background-color: aqua;
-  }
+
+
 
   .video-container {
     position: relative;
     width: 100%;
+    
   }
   
   .text-overlay {
@@ -43,10 +39,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: black;
+    
   }
   
   .hover-text {
     margin: 0;
     color: black;
   }
-  
+.ache1-container .ache2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}

@@ -21,6 +21,7 @@ const Home = (props) => {
 
   const handleHover = () => {
     setHovered(true);
+    clearTimeout(timerRef.current);
   };
 
   const handleMouseLeave = () => {
@@ -37,9 +38,9 @@ const Home = (props) => {
           setShowText(false);
           timerRef.current = setTimeout(() => {
             setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-          }, 150); // Cambiado a 1000ms (1 segundo)
-        }, 150); // Cambiado a 1000ms (1 segundo)
-      }, 300);
+          }, 350); // Cambiado a 150ms
+        }, 400); // Cambiado a 150ms
+      }, 1200);
     }
     return () => clearTimeout(timerRef.current);
   }, [hovered, textIndex]);
@@ -51,14 +52,16 @@ const Home = (props) => {
         {showText && (
           <div className="text-overlay">
             <h1 className='ache1'>
-              <span style={{ '--i': 1 }}>{texts[textIndex].text}<FontAwesomeIcon icon={texts[textIndex].icon} /></span>
+              <span style={{ '--i': 1 }}>{texts[textIndex].text}<br></br><FontAwesomeIcon icon={texts[textIndex].icon} /></span>
             </h1>
           </div>
         )}
       </div>
       <div className='content'>
         <div className='ache1-container'>
-          <h1 className='ache2'>I am Fernando Olivares, a Chilean Junior Fullstack JavaScript developer, exploring new technologies and honing my skills. I am proactive, resourceful, and work well in a team.</h1>
+          <h1 className='ache2'>I am Fernando Olivares, a Chilean Junior Fullstack JavaScript developer.</h1>
+          
+          <h1 className='ache2'>Please, hover over the video to discover my skills...</h1>
         </div>
       </div>
     </>

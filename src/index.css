@@ -14,11 +14,11 @@
 }
 
 .ache1 {
-  font-size: 2rem; /* Decrease font size for better readability on smaller screens */
+  font-size: 3rem; /* Decrease font size for better readability on smaller screens */
   text-align: center;
   margin-top: 20px; /* Decrease margin-top */
   position: relative;
-  letter-spacing: -0.03em; /* Adjust letter spacing */
+  letter-spacing: -0.05em; /* Adjust letter spacing */
 }
 
 .ache1 span {
@@ -57,12 +57,19 @@ video {
 
 .ache1-container {
   position: relative; /* Change to relative positioning */
-  margin-top: 20px; /* Adjust margin-top */
-  padding: 10px;
+  margin-top: 50px; /* Adjust margin-top */
+  display: flex;
+  flex-direction: column;
   font-family: 'Rouge Script';
   color: white;
+  height: 100vh;
+  
 }
 .ache2{
-  font-size: 13px;
+  font-size: 20px;
 }
 
+body {
+  height: 100vh;
+  overflow-y: hidden;
+}
