@@ -1,17 +1,36 @@
-import videoBg from '../assets/videobgg.mp4'
+import React, { useState, useEffect } from 'react';
+import './Projects.css';
 
-const Proyects = (props) => {
-    return (
-        <>
-        <div className='video'>
-        <div className='overlay'></div>
-        <video src={videoBg} autoPlay loop muted/>
-      </div>
-      
-        <h2>Este es un componente simple de Proyects</h2>
-        </>
-  
-    );
+function Proyects() {
+  const [clicks, setClicks] = useState(0);
+  const [backgroundColor, setBackgroundColor] = useState('white');
+  const [showCounter, setShowCounter] = useState(true);
+
+  useEffect(() => {
+    if (clicks >= 100) {
+      setBackgroundColor('#FFD700'); // Cambia el color a dorado cuando se alcanzan 100 clics
+      setShowCounter(false); // Oculta el contador cuando se alcanzan 100 clics
+    } else {
+      setBackgroundColor('white'); // Vuelve al color blanco si se reducen los clics por debajo de 100
+      setShowCounter(true); // Vuelve a mostrar el contador si los clics vuelven a ser menos de 100
+    }
+  }, [clicks]);
+
+  const handleClick = () => {
+    setClicks(clicks + 1);
   };
-  
-  export default Proyects;
+
+  return (
+    <div className="Projects" style={{ backgroundColor: backgroundColor }}>
+      {showCounter && (
+        <div>
+          <h1>Contador de Clicks: {clicks}</h1>
+          <button onClick={handleClick}>Click Me</button>
+        </div>
+      )}
+      {!showCounter && <p>¡Has alcanzado los 100 clics!</p>}
+    </div>
+  );
+}
+
+export default Proyects;

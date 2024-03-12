@@ -1,0 +1,26 @@
+.Projects {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
