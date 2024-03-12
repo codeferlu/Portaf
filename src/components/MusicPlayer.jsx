@@ -5,7 +5,7 @@ const MusicPlayer = () => {
   return (
     <div>
       
-      <audio controls>
+      <audio controls loop>
         <source src={musicP} type="audio/mpeg" />
         Tu navegador no soporta la reproducción de audio.
       </audio>

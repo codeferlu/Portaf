@@ -41,7 +41,7 @@ const Home = (props) => {
             setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
           }, 650); 
         }, 900); 
-      }, 1200);
+      }, 1100);
     }
     return () => clearTimeout(timerRef.current);
   }, [hovered, textIndex]);
@@ -63,7 +63,9 @@ const Home = (props) => {
           <h1 className='ache2'>I am Fernando Olivares, a Chilean Junior Fullstack JavaScript developer.</h1>
           
           <h1 className='ache2'>Please, hover over the video to discover my skills...</h1>
+          <div className='musicbox'>
       <MusicPlayer />
+      </div>
         </div>
       </div>
       {/* Aquí agregamos el reproductor de música */}
