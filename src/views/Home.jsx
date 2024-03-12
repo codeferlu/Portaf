@@ -4,6 +4,7 @@ import videoBg from '../assets/videobgg.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs, faHtml5, faCss3, faReact, faGithub, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
+import TypingAnimation from '../components/TypingAnimation';
 
 const Home = (props) => {
   const [hovered, setHovered] = useState(false);
@@ -11,6 +12,9 @@ const Home = (props) => {
   const [showText, setShowText] = useState(false);
   const timerRef = useRef(null);
 
+
+
+  
   const texts = [
     { text: 'JavaScript', icon: faJs },
     { text: 'HTML5', icon: faHtml5 },
@@ -60,7 +64,7 @@ const Home = (props) => {
       </div>
       <div className='content'>
         <div className='ache1-container'>
-          <h1 className='ache2'>I am Fernando Olivares, a Chilean Junior Fullstack JavaScript developer.</h1>
+          <h1 className='ache2'>{TypingAnimation}I am Fernando Olivares, a Chilean Junior Fullstack JavaScript developer.</h1>
           
           <h1 className='ache2'>Please, hover over the video to discover my skills...</h1>
           <div className='musicbox'>
