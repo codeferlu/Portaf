@@ -3,6 +3,7 @@
     height: auto;
     display: block;
     transition: opacity 3s ease; /* Transición suave para la propiedad de opacidad */
+    
   }
   
   .video-container:hover .video {

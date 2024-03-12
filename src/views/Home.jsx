@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import MusicPlayer from '../components/MusicPlayer'
 import videoBg from '../assets/videobgg.mp4';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs, faHtml5, faCss3, faReact, faGithub, faBootstrap } from '@fortawesome/free-brands-svg-icons';
@@ -38,8 +39,8 @@ const Home = (props) => {
           setShowText(false);
           timerRef.current = setTimeout(() => {
             setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-          }, 350); 
-        }, 400); 
+          }, 650); 
+        }, 900); 
       }, 1200);
     }
     return () => clearTimeout(timerRef.current);
@@ -62,8 +63,10 @@ const Home = (props) => {
           <h1 className='ache2'>I am Fernando Olivares, a Chilean Junior Fullstack JavaScript developer.</h1>
           
           <h1 className='ache2'>Please, hover over the video to discover my skills...</h1>
+      <MusicPlayer />
         </div>
       </div>
+      {/* Aquí agregamos el reproductor de música */}
     </>
   );
 };
